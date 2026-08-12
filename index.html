@@ -456,7 +456,7 @@
             font-size: 0.9rem;
         }
 
-        /* --- CONTACTO (CORREGIDO PARA MÓVIL) --- */
+        /* --- CONTACTO (CORREGIDO PARA MÓVIL Y MAILTO/FORMSPREE) --- */
         .contact-box {
             background: white;
             border-radius: 24px;
@@ -466,7 +466,9 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 2.5rem;
-            overflow: hidden; /* Evita cualquier desbordamiento */
+            overflow: hidden;
+            box-sizing: border-box;
+            max-width: 100%;
         }
 
         .contact-info {
@@ -522,7 +524,7 @@
             font-weight: 700;
             color: var(--primary);
             text-decoration: none;
-            word-break: break-word; /* Rompe correos o URLs largas en celular */
+            word-break: break-word;
             display: block;
         }
 
@@ -554,7 +556,7 @@
             font-size: 0.92rem;
             outline: none;
             transition: var(--transition);
-            box-sizing: border-box; /* Asegura padding interno perfecto */
+            box-sizing: border-box;
         }
 
         .form-group input:focus, .form-group textarea:focus {
@@ -628,7 +630,7 @@
 
             .contact-box {
                 grid-template-columns: 1fr;
-                padding: 1.5rem; /* Ajustado para dar más margen interno en celular */
+                padding: 1.5rem;
                 gap: 2rem;
             }
 
@@ -687,7 +689,7 @@
                 <li><a href="#proceso">Proceso</a></li>
                 <li><a href="#contacto">Contacto</a></li>
                 <li>
-                    <a href="https://wa.me/526531234567?text=Hola%20Eric,%20me%20interesa%20desarrollar%20una%20aplicaci%C3%B3n%20para%20mi%20negocio." class="btn-nav" target="_blank">
+                    <a href="https://wa.me/526538495010?text=Hola%20Eric,%20me%20interesa%20desarrollar%20una%20aplicaci%C3%B3n%20para%20mi%20negocio." class="btn-nav" target="_blank">
                         <i class="fa-brands fa-whatsapp"></i> Cotizar App
                     </a>
                 </li>
@@ -707,7 +709,7 @@
                     Transformo tus procesos manuales y hojas de Excel en aplicaciones móviles intuitivas, flujos de trabajo automáticos y tableros interactivos con la tecnología de <strong>Microsoft Power Platform</strong>.
                 </p>
                 <div class="hero-buttons">
-                    <a href="https://wa.me/526531234567?text=Hola%20Eric,%20quiero%20mas%20informacion%20sobre%20tus%20aplicaciones." class="btn-primary" target="_blank">
+                    <a href="https://wa.me/526538495010?text=Hola%20Eric,%20quiero%20mas%20informacion%20sobre%20tus%20aplicaciones." class="btn-primary" target="_blank">
                         <i class="fa-brands fa-whatsapp"></i> Hablar por WhatsApp
                     </a>
                     <a href="#soluciones" class="btn-secondary">
@@ -845,7 +847,7 @@
         </div>
     </section>
 
-    <!-- CONTACTO (SECCIÓN AJUSTADA) -->
+    <!-- CONTACTO -->
     <section class="section" id="contacto">
         <div class="container">
             <div class="contact-box">
@@ -879,7 +881,7 @@
                 </div>
 
                 <div class="contact-form">
-                    <form action="mailto:contacto@eavaplicaciones.com" method="post" enctype="text/plain">
+                    <form action="mailto:negocio_evielma@hotmail.com?subject=Consulta%20desde%20sitio%20web%20EAV%20Aplicaciones" method="post" enctype="text/plain">
                         <div class="form-group">
                             <input type="text" name="Nombre" placeholder="Tu Nombre o Empresa" required>
                         </div>
@@ -907,7 +909,7 @@
     </footer>
 
     <!-- BOTÓN FLOTANTE WHATSAPP -->
-    <a href="https://wa.me/526531234567?text=Hola%20Eric,%20vi%20tu%20pagina%20web%20y%20me%20interesa%20desarrollar%20una%20aplicacion." class="whatsapp-float" target="_blank" title="Contactar por WhatsApp">
+    <a href="https://wa.me/526538495010?text=Hola%20Eric,%20vi%20tu%20pagina%20web%20y%20me%20interesa%20desarrollar%20una%20aplicacion." class="whatsapp-float" target="_blank" title="Contactar por WhatsApp">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
 
